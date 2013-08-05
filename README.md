@@ -12,8 +12,8 @@ http://rubydoc.info/github/stackreduce/stackreduce/master/frames
 ### Issue tracker
 https://github.com/stackreduce/stackreduce/issues
 
-## Installation
-You can add it to your Gemfile:
+## Getting started
+Add it to your Gemfile:
 
     gem 'stackreduce'
 
@@ -25,8 +25,8 @@ Or install it yourself as:
 
     $ gem install stackreduce
 
-## Generator
-Create generator:
+## Create a config file
+From console run the generator:
 	
     $ rails g stackreduce:config
 
