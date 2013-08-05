@@ -1,6 +1,12 @@
 # Stackreduce API Wrapper
+
+
+
+
 Stackreduce gem its a Rails API Wrapper for [Stackreduce.com](http://www.stackreduce.com/)
 A simple solutions for pushing your data from your rails app
+
+[![Code Climate](https://codeclimate.com/github/stackreduce/stackreduce-rails.png)](https://codeclimate.com/github/stackreduce/stackreduce-rails)
 
 ### RDocs
 
