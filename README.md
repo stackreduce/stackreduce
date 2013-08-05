@@ -29,10 +29,16 @@ Edit your config file:
 	end
 
 
+
 ## Usage
 Push a new stack:
 
 	Stackreduce.push User.all		
+	Push a new stack:
+Or create a stack with a name:
+
+	Stackreduce.push User.all, :name => "My awesome stack"
+
 
 
 ## Contributing
