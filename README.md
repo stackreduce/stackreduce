@@ -1,7 +1,6 @@
 # Stackreduce
 
-TODO: Write a gem description
-
+TODO: Rails API Wrapper for [Stackreduce.com](http://www.stackreduce.com/)
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -28,8 +27,6 @@ Edit your config file:
 	  config.token = "YOUR_APP_TOKEN"
 	end
 
-
-
 ## Usage
 Push a new stack:
 
@@ -39,8 +36,10 @@ Or create a stack with a name:
 
 	Stackreduce.push User.all, :name => "My awesome stack"
 
-
-
+## Tested with
+	Rails 4.0.0
+	ruby 2.0.0p195 (2013-05-14 revision 40734) [x86_64-darwin12.3.0]
+	
 ## Contributing
 
 1. Fork it
