@@ -16,6 +16,10 @@ Or install it yourself as:
 
     $ gem install stackreduce
 
+Create generator
+	
+    rails g stackreduce:config
+
 ## Usage
 
 TODO: Write usage instructions here
