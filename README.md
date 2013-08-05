@@ -45,14 +45,11 @@ Edit your config file and add your applications id and token:
 Push a new stack:
 
 	Stackreduce.push User.all		
-	Push a new stack:
-Or create a stack with a name:
+
+or create a stack with a name:
 
 	Stackreduce.push User.all, :name => "My awesome stack"
 
-
-
-http://rubydoc.info/github/stackreduce/stackreduce/master/frames
 
 ## Tested with
 	Rails 4.0.0
@@ -65,3 +62,15 @@ http://rubydoc.info/github/stackreduce/stackreduce/master/frames
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+
+### Maintainers
+
+* Yannis Kolovos (https://github.com/msroot)
+
+## License
+
+MIT License 
+Copyright (c) 2013 Yannis Kolovos
+
+
