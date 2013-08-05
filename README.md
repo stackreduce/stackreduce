@@ -24,8 +24,8 @@ Create generator:
 Edit your config file:
 
     Stackreduce.configure do |config|
-	  config.app_id = "YOU_APP_ID_HERE"
-	  config.token = "YOU_APP_TOKEN"
+	  config.app_id = "YOUR_APP_ID"
+	  config.token = "YOUR_APP_TOKEN"
 	end
 
 
