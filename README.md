@@ -1,9 +1,21 @@
 # Stackreduce
 
-TODO: Rails API Wrapper for [Stackreduce.com](http://www.stackreduce.com/)
-## Installation
+## Information
+Stackreduce gem its a Rails API Wrapper for [Stackreduce.com](http://www.stackreduce.com/)
+A simple solutions for pushing your data from your rails app
 
-Add this line to your application's Gemfile:
+### RDocs
+
+You can view the Stackreduce documentation in RDoc format here:
+
+http://rubydoc.info/github/stackreduce/stackreduce/master/frames
+
+
+### Issue tracker
+https://github.com/stackreduce/stackreduce/issues
+
+## Installation
+You can add it to your Gemfile:
 
     gem 'stackreduce'
 
@@ -15,12 +27,16 @@ Or install it yourself as:
 
     $ gem install stackreduce
 
+## Generator
 Create generator:
 	
     $ rails g stackreduce:config
 
+It will create a config file under your 
 
-Edit your config file:
+	config/initializers/stackreduce_config.rb
+
+Edit your config file and add your applications id and token:
 
     Stackreduce.configure do |config|
 	  config.app_id = "YOUR_APP_ID"
@@ -35,6 +51,10 @@ Push a new stack:
 Or create a stack with a name:
 
 	Stackreduce.push User.all, :name => "My awesome stack"
+
+
+
+http://rubydoc.info/github/stackreduce/stackreduce/master/frames
 
 ## Tested with
 	Rails 4.0.0
