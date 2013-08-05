@@ -70,7 +70,6 @@ or create a stack with a name:
 
 ## License
 
-MIT License 
-Copyright (c) 2013 Yannis Kolovos
+MIT License Copyright (c) 2013 
 
 
