@@ -28,13 +28,12 @@ Edit your config file:
 	  config.token = "YOU_APP_TOKEN"
 	end
 
+
+## Usage
 Push a new stack:
 
 	Stackreduce.push User.all		
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
