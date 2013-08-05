@@ -7,6 +7,7 @@ Stackreduce gem its a Rails API Wrapper for [Stackreduce.com](http://www.stackre
 A simple solutions for pushing your data from your rails app
 
 [![Code Climate](https://codeclimate.com/github/stackreduce/stackreduce-rails.png)](https://codeclimate.com/github/stackreduce/stackreduce-rails)
+[![Gem Version](https://badge.fury.io/rb/stackreduce.png)](http://badge.fury.io/rb/stackreduce)
 
 ### RDocs
 
