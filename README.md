@@ -18,7 +18,7 @@ Or install it yourself as:
 
 Create generator:
 	
-    rails g stackreduce:config
+    $ rails g stackreduce:config
 
 
 Edit your config file:
