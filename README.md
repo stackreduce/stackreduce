@@ -1,4 +1,4 @@
-# Stackreduce Rails Gem
+# Stackreduce API Wrapper
 Stackreduce gem its a Rails API Wrapper for [Stackreduce.com](http://www.stackreduce.com/)
 A simple solutions for pushing your data from your rails app
 
@@ -63,13 +63,9 @@ or create a stack with a name:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-
-### Maintainers
-
-* Yannis Kolovos (https://github.com/msroot)
-
 ## License
 
-MIT License Copyright (c) 2013 
+Released under the MIT license
+see the file License.
 
-
+Created by Yannis Kolovos (https://github.com/msroot)
