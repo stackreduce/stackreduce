@@ -16,9 +16,21 @@ Or install it yourself as:
 
     $ gem install stackreduce
 
-Create generator
+Create generator:
 	
     rails g stackreduce:config
+
+
+Edit your config file:
+
+    Stackreduce.configure do |config|
+	  config.app_id = "YOU_APP_ID_HERE"
+	  config.token = "YOU_APP_TOKEN"
+	end
+
+Push a new stack:
+
+	Stackreduce.push User.all		
 
 ## Usage
 
