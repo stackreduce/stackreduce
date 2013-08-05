@@ -6,18 +6,18 @@
 Stackreduce gem its a Rails API Wrapper for [Stackreduce.com](http://www.stackreduce.com/)
 A simple solutions for pushing your data from your rails app
 
-[![Code Climate](https://codeclimate.com/github/stackreduce/stackreduce-rails.png)](https://codeclimate.com/github/stackreduce/stackreduce-rails)
+[![Code Climate](https://codeclimate.com/github/stackreduce/stackreduce.png)](https://codeclimate.com/github/stackreduce/stackreduce)
 [![Gem Version](https://badge.fury.io/rb/stackreduce.png)](http://badge.fury.io/rb/stackreduce)
 
 ### RDocs
 
 You can view the Stackreduce documentation in RDoc format here:
 
-http://rubydoc.info/github/stackreduce/stackreduce-rails/master/frames
+http://rubydoc.info/github/stackreduce/stackreduce/master/frames
 
 
 ### Issue tracker
-https://github.com/stackreduce/stackreduce-rails/issues
+https://github.com/stackreduce/stackreduce/issues
 
 ## Getting started
 Add it to your Gemfile:
