@@ -1,4 +1,4 @@
-# Stackreduce
+# Stackreduce Rails Gem
 Stackreduce gem its a Rails API Wrapper for [Stackreduce.com](http://www.stackreduce.com/)
 A simple solutions for pushing your data from your rails app
 
@@ -6,11 +6,11 @@ A simple solutions for pushing your data from your rails app
 
 You can view the Stackreduce documentation in RDoc format here:
 
-http://rubydoc.info/github/stackreduce/stackreduce/master/frames
+http://rubydoc.info/github/stackreduce/stackreduce-rails/master/frames
 
 
 ### Issue tracker
-https://github.com/stackreduce/stackreduce/issues
+https://github.com/stackreduce/stackreduce-rails/issues
 
 ## Getting started
 Add it to your Gemfile:

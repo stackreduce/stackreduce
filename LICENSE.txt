@@ -1,4 +1,4 @@
-Copyright (c) 2013 John Kolovos
+Copyright (c) 2013 Yannis Kolovos
 
 MIT License
 
