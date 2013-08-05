@@ -1,41 +1,34 @@
-require 'rails'
 require 'active_support'
- 
+require 'active_support/configurable'
+require 'active_support/inflector'
+
 module Stackreduce
   extend ActiveSupport::Autoload
   
   # Use ActiveSupport::Autoload for better performance 
-  # autoload all gems classes
+  # autoload all required classes
   autoload :Version
   autoload :Exceptions
   autoload :Stack
   
-  
   # User from rails initializer
   # ==== Examples
   # Stackreduce.configure do |config|
-  #   config.token = ""
-  #   config.app_id = ""
+  #   config.token = "my_very_big_token"
+  #   config.app_id = "my_applications_id"
   # end
   def self.configure
     yield self
   end
-   
-  # Applications app_id 
-  # find in applications settings. 
-  # we use it for saving the stack
-  # ==== Examples
-  # Stackreduce.app_id
-  mattr_accessor :app_id
-  @@app_id = nil
+
   
   # Applications token 
   # find in applications settings. 
   # we use it for saving the stack
   # ==== Examples
   # Stackreduce.token
-  mattr_accessor :token
-  @@token = nil
+  include ActiveSupport::Configurable
+  config_accessor :app_id, :token
 
   
   # Parses the given array to json
@@ -54,8 +47,10 @@ module Stackreduce
   # ==== Examples
   # Stackreduce.push Client.includes(:address).limit(10)
   # Stackreduce.push User.all
-  def self.push(data)
-    Stackreduce::Stack.push(data)
+  # Stackreduce.push User.all, :name => "My awesome stack"
+  
+  def self.push(data, options)
+    Stackreduce::Stack.push(data, options)
   end
 end
 
