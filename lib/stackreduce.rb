@@ -21,7 +21,6 @@ module Stackreduce
     yield self
   end
 
-  
   # Applications token 
   # find in applications settings. 
   # we use it for saving the stack
@@ -30,8 +29,7 @@ module Stackreduce
   include ActiveSupport::Configurable
   config_accessor :app_id, :token
 
-  
-  # Parses the given array to json
+    # Parses the given array to json
   # ==== Arguments
   # * +data+ - Array
   # ==== Examples
@@ -49,8 +47,7 @@ module Stackreduce
   # Stackreduce.push User.all
   # Stackreduce.push User.all, :name => "My awesome stack"
   
-  def self.push(data, options)
+  def self.push(data, options = {})
     Stackreduce::Stack.push(data, options)
   end
 end
-
