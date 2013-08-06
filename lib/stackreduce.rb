@@ -10,6 +10,7 @@ module Stackreduce
   autoload :Version
   autoload :Exceptions
   autoload :Stack
+  autoload :Seed
   
   # User from rails initializer
   # ==== Examples
@@ -45,9 +46,19 @@ module Stackreduce
   # ==== Examples
   # Stackreduce.push Client.includes(:address).limit(10)
   # Stackreduce.push User.all
-  # Stackreduce.push User.all, :name => "My awesome stack"
-  
-  def self.push(data, options = {})
+  # Stackreduce.push User.all, :stack => "My awesome stack"
+  def self.push(data=nil, options = {})
     Stackreduce::Stack.push(data, options)
   end
+  
+
+  # Seed functions for testing
+  # ==== Arguments
+  # * +users+ - String
+  # ==== Examples
+  # Stackreduce.seed :users=>"My Users test"
+  def self.seed(options = {})
+    Stackreduce::Seed.seed(options)
+  end
+  
 end
