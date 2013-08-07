@@ -53,7 +53,7 @@ module Stackreduce
       elsif options[:products] 
         seed_products(options[:products]) 
       else
-        seed_users("Demo Usees")
+        seed_users("SEED EXAMPLE: Demo Users Stack")
       end
     
     end
