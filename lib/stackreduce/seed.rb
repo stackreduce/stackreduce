@@ -34,7 +34,7 @@ module Stackreduce
     def self.seed_products(stack)
       products = []
       50.times do 
-        users <<  Seeduser.new(
+        products <<  Seedproduct.new(
         :name=>Faker::Commerce.product_name,
         :color=>Faker::Commerce.color, 
         :duns_number=>Faker::Company.duns_number,
