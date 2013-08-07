@@ -48,9 +48,13 @@ module Stackreduce
     
 
     def self.seed(options)
-      seed_users(options[:users]) if options[:users] 
-      seed_products(options[:products]) if options[:products] 
-      
+      if options[:users]  
+        seed_users(options[:users]) 
+      elsif options[:products] 
+        seed_products(options[:products]) 
+      else
+        seed_users("Demo Usees")
+      end
+    
     end
   end
-end
