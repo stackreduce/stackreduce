@@ -32,10 +32,11 @@ module Stackreduce
     def self.push(data, options)
       validate_config!      
       data = parse(data)
-      name = options[:stack] ||= nil
+      # we use :stack for argument here but rails expecting :name
+      stack = options[:stack] ||= nil
       
       params = {'token' => Stackreduce.token,'app_id' => Stackreduce.app_id,'stack_data' => data}
-      params.merge!('name' => name) unless name.nil?
+      params.merge!('name' => stack) unless stack.nil?
 
       uri = URI(END_POINT_URL)
       res = Net::HTTP.post_form(uri, params)
