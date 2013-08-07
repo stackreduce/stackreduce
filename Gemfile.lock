@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    stackreduce (0.0.1)
+    stackreduce (0.0.2)
       activesupport
       faker
       thor
