@@ -55,6 +55,7 @@ module Stackreduce
       else
         seed_users("SEED EXAMPLE: Demo Users Stack")
       end
+      end
     
     end
   end
