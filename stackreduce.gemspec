@@ -17,10 +17,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = '>= 1.9.3'
+  spec.required_ruby_version = '>= 2.0.0p195'
   spec.add_dependency "thor"
   spec.add_dependency('activesupport')
-  spec.add_dependency('active_model')
   spec.add_dependency('faker')
   
   spec.add_development_dependency "rspec"
