@@ -1,6 +1,6 @@
 require 'faker'
 require 'stackreduce/exceptions'
-
+require 'active_model'
 
 module Stackreduce
   class Seed
