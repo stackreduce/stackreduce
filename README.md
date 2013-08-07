@@ -55,7 +55,7 @@ Push a new stack:
 
 or create a stack with a name:
 
-	Stackreduce.push User.all, :name => "My awesome stack"
+	Stackreduce.push User.all, :stack => "My awesome stack"
 
 
 
