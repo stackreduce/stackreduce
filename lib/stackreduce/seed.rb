@@ -9,7 +9,12 @@ module Stackreduce
       include ActiveModel::Model
       attr_accessor :name, :city, :email, :country, :state
     end
-
+    
+    class Seedproduct
+      include ActiveModel::Model
+      attr_accessor :name, :color, :duns_number, :company_name, :department
+    end
+    
     def self.seed_users(stack)
       users = []
       50.times do 
@@ -24,10 +29,7 @@ module Stackreduce
       Stackreduce.push(users, :stack=> stack)
     end
     
-    class Seedproduct
-      include ActiveModel::Model
-      attr_accessor :name, :color, :duns_number, :company_name, :department
-    end
+
     
     def self.seed_products(stack)
       products = []
@@ -51,9 +53,10 @@ module Stackreduce
       elsif options[:products] 
         seed_products(options[:products]) 
       else
-        seed_users("SEED EXAMPLE: Demo Users Stack")
+        seed_users("SEEDED: Demo Users Stack")
       end
-      end
-    
     end
+
+    
   end
+end

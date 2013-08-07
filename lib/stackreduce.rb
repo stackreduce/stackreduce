@@ -52,10 +52,10 @@ module Stackreduce
   end
   
 
-  # Seed functions for testing
+  # Seeding demo stacks
   # ==== Arguments
-  # * +users+ - String
-  # * +products+ - String  
+  # * +:users+ - String
+  # * +:products+ - String  
   # ==== Examples
   # Stackreduce.seed
   # Stackreduce.seed :users => "My Users Stack"
