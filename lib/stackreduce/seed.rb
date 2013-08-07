@@ -24,8 +24,6 @@ module Stackreduce
       Stackreduce.push(users, :stack=> stack)
     end
     
-    
-    
     class Seedproduct
       include ActiveModel::Model
       attr_accessor :name, :color, :duns_number, :company_name, :department

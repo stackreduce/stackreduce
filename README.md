@@ -58,6 +58,24 @@ or create a stack with a name:
 	Stackreduce.push User.all, :name => "My awesome stack"
 
 
+
+## Seed en example Stack
+Push a new demo stack:
+
+Will generate an demo stack with users named "My Users Stack"
+	
+	Stackreduce.seed :users => "My Users Stack"
+	
+Will generate an demo stack with users named "My Products Stack"	
+	
+	Stackreduce.seed :products => "My Products Stack"
+
+Defaults: Will generate an demo stack with users
+	
+	Stackreduce.seed
+
+
+
 ## Tested with
 	Rails 4.0.0
 	ruby 2.0.0p195 (2013-05-14 revision 40734) [x86_64-darwin12.3.0]

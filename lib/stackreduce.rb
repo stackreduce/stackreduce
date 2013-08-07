@@ -55,8 +55,11 @@ module Stackreduce
   # Seed functions for testing
   # ==== Arguments
   # * +users+ - String
+  # * +products+ - String  
   # ==== Examples
-  # Stackreduce.seed :users=>"My Users test"
+  # Stackreduce.seed
+  # Stackreduce.seed :users => "My Users Stack"
+  # Stackreduce.seed :products => "My Products Stack"
   def self.seed(options = {})
     Stackreduce::Seed.seed(options)
   end
